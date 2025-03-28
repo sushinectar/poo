@@ -6,4 +6,11 @@ public class TextDocument : Document
   {
     Content = content;
   }
+
+  public override void Print()
+  {
+      base.Print();
+      Console.WriteLine("Content:");
+      Console.WriteLine(FormatedDocument());
+  }
 }
