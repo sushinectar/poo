@@ -10,4 +10,9 @@ public class Document
     Author = author;
     Date = date;
   }
+
+  public virtual Print() 
+  {
+    Console.WriteLine($"Title of document: {title}, Name of the author: {author}, Date: {date}")
+  }
 }
