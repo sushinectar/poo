@@ -1,0 +1,14 @@
+/home/sushi/Documents/workspace/prog/facul/POO/game/bin/Debug/net8.0/game
+/home/sushi/Documents/workspace/prog/facul/POO/game/bin/Debug/net8.0/game.deps.json
+/home/sushi/Documents/workspace/prog/facul/POO/game/bin/Debug/net8.0/game.runtimeconfig.json
+/home/sushi/Documents/workspace/prog/facul/POO/game/bin/Debug/net8.0/game.dll
+/home/sushi/Documents/workspace/prog/facul/POO/game/bin/Debug/net8.0/game.pdb
+/home/sushi/Documents/workspace/prog/facul/POO/game/obj/Debug/net8.0/game.GeneratedMSBuildEditorConfig.editorconfig
+/home/sushi/Documents/workspace/prog/facul/POO/game/obj/Debug/net8.0/game.AssemblyInfoInputs.cache
+/home/sushi/Documents/workspace/prog/facul/POO/game/obj/Debug/net8.0/game.AssemblyInfo.cs
+/home/sushi/Documents/workspace/prog/facul/POO/game/obj/Debug/net8.0/game.csproj.CoreCompileInputs.cache
+/home/sushi/Documents/workspace/prog/facul/POO/game/obj/Debug/net8.0/game.dll
+/home/sushi/Documents/workspace/prog/facul/POO/game/obj/Debug/net8.0/refint/game.dll
+/home/sushi/Documents/workspace/prog/facul/POO/game/obj/Debug/net8.0/game.pdb
+/home/sushi/Documents/workspace/prog/facul/POO/game/obj/Debug/net8.0/game.genruntimeconfig.cache
+/home/sushi/Documents/workspace/prog/facul/POO/game/obj/Debug/net8.0/ref/game.dll

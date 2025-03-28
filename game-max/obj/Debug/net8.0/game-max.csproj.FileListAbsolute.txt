@@ -1,0 +1,14 @@
+/home/sushi/Documents/workspace/prog/facul/POO/game-max/bin/Debug/net8.0/game-max
+/home/sushi/Documents/workspace/prog/facul/POO/game-max/bin/Debug/net8.0/game-max.deps.json
+/home/sushi/Documents/workspace/prog/facul/POO/game-max/bin/Debug/net8.0/game-max.runtimeconfig.json
+/home/sushi/Documents/workspace/prog/facul/POO/game-max/bin/Debug/net8.0/game-max.dll
+/home/sushi/Documents/workspace/prog/facul/POO/game-max/bin/Debug/net8.0/game-max.pdb
+/home/sushi/Documents/workspace/prog/facul/POO/game-max/obj/Debug/net8.0/game-max.GeneratedMSBuildEditorConfig.editorconfig
+/home/sushi/Documents/workspace/prog/facul/POO/game-max/obj/Debug/net8.0/game-max.AssemblyInfoInputs.cache
+/home/sushi/Documents/workspace/prog/facul/POO/game-max/obj/Debug/net8.0/game-max.AssemblyInfo.cs
+/home/sushi/Documents/workspace/prog/facul/POO/game-max/obj/Debug/net8.0/game-max.csproj.CoreCompileInputs.cache
+/home/sushi/Documents/workspace/prog/facul/POO/game-max/obj/Debug/net8.0/game-max.dll
+/home/sushi/Documents/workspace/prog/facul/POO/game-max/obj/Debug/net8.0/refint/game-max.dll
+/home/sushi/Documents/workspace/prog/facul/POO/game-max/obj/Debug/net8.0/game-max.pdb
+/home/sushi/Documents/workspace/prog/facul/POO/game-max/obj/Debug/net8.0/game-max.genruntimeconfig.cache
+/home/sushi/Documents/workspace/prog/facul/POO/game-max/obj/Debug/net8.0/ref/game-max.dll
