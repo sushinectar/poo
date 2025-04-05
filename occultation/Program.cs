@@ -24,3 +24,26 @@ public class RegistroOculto : RegistroBase
         Console.WriteLine("🟡 RegistroOculto.Salvar() chamado (new)");
     }
 }
+
+// Programa principal
+public class Program
+{
+    public static void Main()
+    {
+        // Referência direta
+        var sobrescritoDireto = new RegistroSobrescrito();
+        var ocultoDireto = new RegistroOculto();
+
+        // Referência como base
+        RegistroBase sobrescritoComoBase = sobrescritoDireto;
+        RegistroBase ocultoComoBase = ocultoDireto;
+
+        Console.WriteLine("➡️ Chamando via referência direta:");
+        sobrescritoDireto.Salvar(); // Chama sobrescrito
+        ocultoDireto.Salvar();      // Chama oculto
+
+        Console.WriteLine("\n➡️ Chamando via referência base:");
+        sobrescritoComoBase.Salvar(); // Chama sobrescrito (override)
+        ocultoComoBase.Salvar();      // Chama base (porque é new)
+    }
+}
