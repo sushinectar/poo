@@ -122,3 +122,39 @@ public class DocumentoPDF : Documento
         MarcaDagua = texto;
     }
 }
+
+// Processador de Documentos
+public class ProcessadorDocumentos
+{
+    public void ProcessarLote(List<Documento> documentos)
+    {
+        foreach (var doc in documentos)
+        {
+            Console.WriteLine("========== Documento ==========");
+            doc.Imprimir();
+            Console.WriteLine("========== Fim ==========\n");
+        }
+    }
+}
+
+// Programa principal
+public class Program
+{
+    public static void Main()
+    {
+        var docTexto = new DocumentoTexto("Texto Exemplo", "Luciano", "Este é um exemplo de texto.");
+        var docHtml = new DocumentoHTML("HTML Exemplo", "Maria", "<h1>Título</h1><p>Parágrafo.</p>");
+        var docPdf = new DocumentoPDF("PDF Exemplo", "João", "Conteúdo de um documento PDF.");
+
+        docHtml.AdicionarEstilo("body { font-family: Arial; }");
+        docPdf.AdicionarMarcaDagua("CONFIDENCIAL");
+
+        var documentos = new List<Documento> { docTexto, docHtml, docPdf };
+
+        var processador = new ProcessadorDocumentos();
+        processador.ProcessarLote(documentos);
+
+        // Extra: demonstração dos métodos específicos
+        Console.WriteLine($"Palavras no DocumentoTexto: {docTexto.ContarPalavras()}");
+    }
+}
