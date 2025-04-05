@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "OP4S8J/ScJ0=",
+  "success": true,
+  "projectFilePath": "/home/sushi/Documentos/workspace/prog/poo/occultation/occultation.csproj",
+  "expectedPackageFiles": [
+    "/home/sushi/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.3/microsoft.aspnetcore.app.ref.9.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

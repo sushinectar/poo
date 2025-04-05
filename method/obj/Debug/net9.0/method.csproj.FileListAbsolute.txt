@@ -1,0 +1,15 @@
+/home/sushi/Documentos/workspace/prog/poo/method/bin/Debug/net9.0/method
+/home/sushi/Documentos/workspace/prog/poo/method/bin/Debug/net9.0/method.deps.json
+/home/sushi/Documentos/workspace/prog/poo/method/bin/Debug/net9.0/method.runtimeconfig.json
+/home/sushi/Documentos/workspace/prog/poo/method/bin/Debug/net9.0/method.dll
+/home/sushi/Documentos/workspace/prog/poo/method/bin/Debug/net9.0/method.pdb
+/home/sushi/Documentos/workspace/prog/poo/method/obj/Debug/net9.0/method.GeneratedMSBuildEditorConfig.editorconfig
+/home/sushi/Documentos/workspace/prog/poo/method/obj/Debug/net9.0/method.AssemblyInfoInputs.cache
+/home/sushi/Documentos/workspace/prog/poo/method/obj/Debug/net9.0/method.AssemblyInfo.cs
+/home/sushi/Documentos/workspace/prog/poo/method/obj/Debug/net9.0/method.csproj.CoreCompileInputs.cache
+/home/sushi/Documentos/workspace/prog/poo/method/obj/Debug/net9.0/method.sourcelink.json
+/home/sushi/Documentos/workspace/prog/poo/method/obj/Debug/net9.0/method.dll
+/home/sushi/Documentos/workspace/prog/poo/method/obj/Debug/net9.0/refint/method.dll
+/home/sushi/Documentos/workspace/prog/poo/method/obj/Debug/net9.0/method.pdb
+/home/sushi/Documentos/workspace/prog/poo/method/obj/Debug/net9.0/method.genruntimeconfig.cache
+/home/sushi/Documentos/workspace/prog/poo/method/obj/Debug/net9.0/ref/method.dll
