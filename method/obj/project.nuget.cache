@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LvwtqRk5UXk=",
+  "success": true,
+  "projectFilePath": "/home/sushi/Documentos/workspace/prog/poo/method/method.csproj",
+  "expectedPackageFiles": [
+    "/home/sushi/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.3/microsoft.aspnetcore.app.ref.9.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
