@@ -22,3 +22,20 @@ public abstract class Notificacao
         return $"Para: {Destinatario}\nMensagem: {Mensagem}";
     }
 }
+// Notificação por Email
+public class NotificacaoEmail : Notificacao
+{
+    public NotificacaoEmail(string destinatario, string mensagem)
+        : base(destinatario, mensagem) {}
+
+    public override void Enviar()
+    {
+        Console.WriteLine($"📧 Enviando e-mail para {Destinatario}...");
+        Console.WriteLine(FormatarMensagem());
+    }
+
+    public override string FormatarMensagem()
+    {
+        return $"Assunto: Notificação\nCorpo: {Mensagem}";
+    }
+}
