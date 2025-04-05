@@ -24,3 +24,32 @@ public abstract class Documento
         return $"Título: {Titulo}\nAutor: {Autor}";
     }
 }
+
+// Documento de Texto
+public class DocumentoTexto : Documento
+{
+    public string Conteudo { get; set; }
+
+    public DocumentoTexto(string titulo, string autor, string conteudo)
+        : base(titulo, autor)
+    {
+        Conteudo = conteudo;
+    }
+
+    public override void Imprimir()
+    {
+        base.Imprimir();
+        Console.WriteLine("Conteúdo do Texto:");
+        Console.WriteLine(Conteudo);
+    }
+
+    public override string ConteudoFormatado()
+    {
+        return $"[Texto]\n{Conteudo}";
+    }
+
+    public int ContarPalavras()
+    {
+        return Conteudo.Split(' ', StringSplitOptions.RemoveEmptyEntries).Length;
+    }
+}
