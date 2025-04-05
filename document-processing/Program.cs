@@ -88,3 +88,37 @@ public class DocumentoHTML : Documento
         Css += css;
     }
 }
+// Documento PDF
+public class DocumentoPDF : Documento
+{
+    public string Texto { get; set; }
+    public string MarcaDagua { get; private set; }
+
+    public DocumentoPDF(string titulo, string autor, string texto)
+        : base(titulo, autor)
+    {
+        Texto = texto;
+        MarcaDagua = "";
+    }
+
+    public override void Imprimir()
+    {
+        base.Imprimir();
+        Console.WriteLine("PDF:");
+        Console.WriteLine(Texto);
+        if (!string.IsNullOrWhiteSpace(MarcaDagua))
+        {
+            Console.WriteLine($"Marca d'água: {MarcaDagua}");
+        }
+    }
+
+    public override string ConteudoFormatado()
+    {
+        return $"[PDF]\nTexto: {Texto}\nMarca d'água: {MarcaDagua}";
+    }
+
+    public void AdicionarMarcaDagua(string texto)
+    {
+        MarcaDagua = texto;
+    }
+}
