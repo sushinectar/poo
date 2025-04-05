@@ -53,3 +53,38 @@ public class DocumentoTexto : Documento
         return Conteudo.Split(' ', StringSplitOptions.RemoveEmptyEntries).Length;
     }
 }
+// Documento HTML
+public class DocumentoHTML : Documento
+{
+    public string Html { get; set; }
+    public string Css { get; private set; }
+
+    public DocumentoHTML(string titulo, string autor, string html)
+        : base(titulo, autor)
+    {
+        Html = html;
+        Css = "";
+    }
+
+    public override void Imprimir()
+    {
+        base.Imprimir();
+        Console.WriteLine("HTML:");
+        Console.WriteLine(Html);
+        if (!string.IsNullOrWhiteSpace(Css))
+        {
+            Console.WriteLine("Estilo CSS:");
+            Console.WriteLine(Css);
+        }
+    }
+
+    public override string ConteudoFormatado()
+    {
+        return $"<html>\n{Html}\n<style>{Css}</style>\n</html>";
+    }
+
+    public void AdicionarEstilo(string css)
+    {
+        Css += css;
+    }
+}
