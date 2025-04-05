@@ -39,3 +39,20 @@ public class NotificacaoEmail : Notificacao
         return $"Assunto: Notificação\nCorpo: {Mensagem}";
     }
 }
+// Notificação por SMS
+public class NotificacaoSMS : Notificacao
+{
+    public NotificacaoSMS(string destinatario, string mensagem)
+        : base(destinatario, mensagem) {}
+
+    public override void Enviar()
+    {
+        Console.WriteLine($"📱 Enviando SMS para {Destinatario}...");
+        Console.WriteLine(FormatarMensagem());
+    }
+
+    public override string FormatarMensagem()
+    {
+        return $"[SMS] {Mensagem}";
+    }
+}
