@@ -1,0 +1,15 @@
+/home/sushi/Documentos/workspace/prog/poo/document-processing/obj/Debug/net8.0/document-processing.GeneratedMSBuildEditorConfig.editorconfig
+/home/sushi/Documentos/workspace/prog/poo/document-processing/obj/Debug/net8.0/document-processing.AssemblyInfoInputs.cache
+/home/sushi/Documentos/workspace/prog/poo/document-processing/obj/Debug/net8.0/document-processing.AssemblyInfo.cs
+/home/sushi/Documentos/workspace/prog/poo/document-processing/obj/Debug/net8.0/document-processing.csproj.CoreCompileInputs.cache
+/home/sushi/Documentos/workspace/prog/poo/document-processing/obj/Debug/net8.0/document-processing.sourcelink.json
+/home/sushi/Documentos/workspace/prog/poo/document-processing/bin/Debug/net8.0/document-processing
+/home/sushi/Documentos/workspace/prog/poo/document-processing/bin/Debug/net8.0/document-processing.deps.json
+/home/sushi/Documentos/workspace/prog/poo/document-processing/bin/Debug/net8.0/document-processing.runtimeconfig.json
+/home/sushi/Documentos/workspace/prog/poo/document-processing/bin/Debug/net8.0/document-processing.dll
+/home/sushi/Documentos/workspace/prog/poo/document-processing/bin/Debug/net8.0/document-processing.pdb
+/home/sushi/Documentos/workspace/prog/poo/document-processing/obj/Debug/net8.0/document-processing.dll
+/home/sushi/Documentos/workspace/prog/poo/document-processing/obj/Debug/net8.0/refint/document-processing.dll
+/home/sushi/Documentos/workspace/prog/poo/document-processing/obj/Debug/net8.0/document-processing.pdb
+/home/sushi/Documentos/workspace/prog/poo/document-processing/obj/Debug/net8.0/document-processing.genruntimeconfig.cache
+/home/sushi/Documentos/workspace/prog/poo/document-processing/obj/Debug/net8.0/ref/document-processing.dll

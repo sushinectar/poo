@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/sushi/Documents/workspace/prog/facul/POO/document-processing/document-processing.csproj",
+      "projectUniqueName": "/home/sushi/Documentos/workspace/prog/poo/document-processing/document-processing.csproj",
       "projectName": "document-processing",
-      "projectPath": "/home/sushi/Documents/workspace/prog/facul/POO/document-processing/document-processing.csproj",
+      "projectPath": "/home/sushi/Documentos/workspace/prog/poo/document-processing/document-processing.csproj",
       "packagesPath": "/home/sushi/.nuget/packages/",
-      "outputPath": "/home/sushi/Documents/workspace/prog/facul/POO/document-processing/obj/",
+      "outputPath": "/home/sushi/Documentos/workspace/prog/poo/document-processing/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/sushi/.nuget/NuGet/NuGet.Config"
@@ -38,7 +38,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -54,12 +60,22 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.14, 8.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[8.0.14, 8.0.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.114/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.104/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "QI1vkL+i81WtQpGllgF4hY1o65mCU0NHQy7/dpPVVw01L38iAY0E2r03PRxNuyMYvled9WXFLNYixsdDTwJB/g==",
+  "dgSpecHash": "FsFuw+U+yGc=",
   "success": true,
-  "projectFilePath": "/home/sushi/Documents/workspace/prog/facul/POO/document-processing/document-processing.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/sushi/Documentos/workspace/prog/poo/document-processing/document-processing.csproj",
+  "expectedPackageFiles": [
+    "/home/sushi/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.14/microsoft.aspnetcore.app.ref.8.0.14.nupkg.sha512",
+    "/home/sushi/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.14/microsoft.netcore.app.host.linux-x64.8.0.14.nupkg.sha512"
+  ],
   "logs": []
 }
