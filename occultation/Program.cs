@@ -15,3 +15,12 @@ public class RegistroSobrescrito : RegistroBase
         Console.WriteLine("🟢 RegistroSobrescrito.Salvar() chamado (override)");
     }
 }
+
+// Classe com ocultação (new)
+public class RegistroOculto : RegistroBase
+{
+    public new void Salvar()
+    {
+        Console.WriteLine("🟡 RegistroOculto.Salvar() chamado (new)");
+    }
+}
