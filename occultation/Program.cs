@@ -1,2 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Classe base
+public class RegistroBase
+{
+    public virtual void Salvar()
+    {
+        Console.WriteLine("🔵 RegistroBase.Salvar() chamado");
+    }
+}
