@@ -28,3 +28,15 @@ public abstract class RepositorioBase<T> : IRepositorio<T>
     public abstract void Update(int id, T entidade);
     public abstract void Delete(int id);
 }
+// Classes modelo
+public class Cliente
+{
+    public int Id { get; set; }
+    public string Nome { get; set; }
+}
+
+public class Produto
+{
+    public int Id { get; set; }
+    public string Nome { get; set; }
+}
