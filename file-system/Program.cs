@@ -98,3 +98,64 @@ public class ArmazenamentoNuvem : IArmazenamento, IRastreavel
         return historico;
     }
 }
+// Classe que usa qualquer tipo de armazenamento
+public class GerenciadorArquivos
+{
+    private readonly IArmazenamento armazenamento;
+
+    public GerenciadorArquivos(IArmazenamento armazenamento)
+    {
+        this.armazenamento = armazenamento;
+    }
+
+    public void SalvarArquivo(string nome, string conteudo)
+    {
+        byte[] dados = System.Text.Encoding.UTF8.GetBytes(conteudo);
+        armazenamento.Salvar(nome, dados);
+        Console.WriteLine($"Arquivo '{nome}' salvo com sucesso!");
+    }
+
+    public void ListarArquivos()
+    {
+        var lista = armazenamento.ListarArquivos();
+        Console.WriteLine("📂 Arquivos disponíveis:");
+        foreach (var arq in lista)
+        {
+            Console.WriteLine($"- {arq}");
+        }
+    }
+
+    public void MostrarHistoricoSeDisponivel()
+    {
+        if (armazenamento is IRastreavel rastreavel)
+        {
+            Console.WriteLine("\n📜 Histórico de operações:");
+            foreach (var registro in rastreavel.ObterHistoricoOperacoes())
+            {
+                Console.WriteLine(registro);
+            }
+        }
+        else
+        {
+            Console.WriteLine("⚠️ Este armazenamento não possui rastreamento.");
+        }
+    }
+}
+// Programa principal
+public class Program
+{
+    public static void Main()
+    {
+        Console.WriteLine("🌐 Simulação com armazenamento em nuvem:");
+        var nuvem = new GerenciadorArquivos(new ArmazenamentoNuvem());
+        nuvem.SalvarArquivo("nota.txt", "Olá do futuro!");
+        nuvem.ListarArquivos();
+        nuvem.MostrarHistoricoSeDisponivel();
+
+        Console.WriteLine("\n💾 Simulação com armazenamento local:");
+        var local = new GerenciadorArquivos(new ArmazenamentoLocal());
+        local.SalvarArquivo("teste.txt", "Arquivo salvo localmente.");
+        local.ListarArquivos();
+        local.MostrarHistoricoSeDisponivel();
+    }
+}
