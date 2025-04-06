@@ -40,3 +40,26 @@ public class Produto
     public int Id { get; set; }
     public string Nome { get; set; }
 }
+// Repositório de Cliente
+public class RepositorioCliente : RepositorioBase<Cliente>
+{
+    public override void Validar(Cliente cliente)
+    {
+        if (string.IsNullOrWhiteSpace(cliente.Nome))
+            Console.WriteLine("❗ Cliente inválido: nome vazio.");
+    }
+
+    public override Cliente Read(int id) => dados.FirstOrDefault(c => c.Id == id);
+
+    public override void Update(int id, Cliente cliente)
+    {
+        var idx = dados.FindIndex(c => c.Id == id);
+        if (idx != -1) dados[idx] = cliente;
+    }
+
+    public override void Delete(int id)
+    {
+        var cliente = Read(id);
+        if (cliente != null) dados.Remove(cliente);
+    }
+}
