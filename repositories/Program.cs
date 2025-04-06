@@ -86,3 +86,41 @@ public class RepositorioProduto : RepositorioBase<Produto>
         if (produto != null) dados.Remove(produto);
     }
 }
+// Classe que só implementa a interface (sem herdar classe abstrata)
+public class RepositorioSimples<T> : IRepositorio<T>
+{
+    private List<T> dados = new List<T>();
+
+    public void Create(T entidade) => dados.Add(entidade);
+    public T Read(int id) => dados.ElementAtOrDefault(id);
+    public void Update(int id, T entidade) => dados[id] = entidade;
+    public void Delete(int id) => dados.RemoveAt(id);
+    public List<T> ListarTodos() => dados;
+}
+
+// Programa principal
+public class Program
+{
+    public static void Main()
+    {
+        Console.WriteLine("📁 Repositório de Cliente (usando classe abstrata + interface):");
+        var repoClientes = new RepositorioCliente();
+        repoClientes.Create(new Cliente { Id = 1, Nome = "Sushi" });
+        repoClientes.Create(new Cliente { Id = 2, Nome = "" }); // inválido
+        repoClientes.Validar(new Cliente { Id = 2, Nome = "" });
+
+        Console.WriteLine("\n📦 Repositório Simples (só com interface):");
+        var repoSimples = new RepositorioSimples<string>();
+        repoSimples.Create("Arquivo A");
+        repoSimples.Create("Arquivo B");
+
+        foreach (var item in repoSimples.ListarTodos())
+        {
+            Console.WriteLine($"- {item}");
+        }
+
+        Console.WriteLine("\n✅ Diferença:");
+        Console.WriteLine("- Classes que herdam da base têm lógica comum compartilhada e validação obrigatória.");
+        Console.WriteLine("- Classes que só usam interface são mais livres e diretas, mas sem regras pré-definidas.");
+    }
+}
