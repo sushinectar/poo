@@ -1,0 +1,15 @@
+/home/sushi/Documentos/workspace/prog/poo/repositories/bin/Debug/net9.0/repositories
+/home/sushi/Documentos/workspace/prog/poo/repositories/bin/Debug/net9.0/repositories.deps.json
+/home/sushi/Documentos/workspace/prog/poo/repositories/bin/Debug/net9.0/repositories.runtimeconfig.json
+/home/sushi/Documentos/workspace/prog/poo/repositories/bin/Debug/net9.0/repositories.dll
+/home/sushi/Documentos/workspace/prog/poo/repositories/bin/Debug/net9.0/repositories.pdb
+/home/sushi/Documentos/workspace/prog/poo/repositories/obj/Debug/net9.0/repositories.GeneratedMSBuildEditorConfig.editorconfig
+/home/sushi/Documentos/workspace/prog/poo/repositories/obj/Debug/net9.0/repositories.AssemblyInfoInputs.cache
+/home/sushi/Documentos/workspace/prog/poo/repositories/obj/Debug/net9.0/repositories.AssemblyInfo.cs
+/home/sushi/Documentos/workspace/prog/poo/repositories/obj/Debug/net9.0/repositories.csproj.CoreCompileInputs.cache
+/home/sushi/Documentos/workspace/prog/poo/repositories/obj/Debug/net9.0/repositories.sourcelink.json
+/home/sushi/Documentos/workspace/prog/poo/repositories/obj/Debug/net9.0/repositories.dll
+/home/sushi/Documentos/workspace/prog/poo/repositories/obj/Debug/net9.0/refint/repositories.dll
+/home/sushi/Documentos/workspace/prog/poo/repositories/obj/Debug/net9.0/repositories.pdb
+/home/sushi/Documentos/workspace/prog/poo/repositories/obj/Debug/net9.0/repositories.genruntimeconfig.cache
+/home/sushi/Documentos/workspace/prog/poo/repositories/obj/Debug/net9.0/ref/repositories.dll
