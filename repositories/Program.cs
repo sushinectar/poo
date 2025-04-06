@@ -63,3 +63,26 @@ public class RepositorioCliente : RepositorioBase<Cliente>
         if (cliente != null) dados.Remove(cliente);
     }
 }
+// Repositório de Produto
+public class RepositorioProduto : RepositorioBase<Produto>
+{
+    public override void Validar(Produto produto)
+    {
+        if (string.IsNullOrWhiteSpace(produto.Nome))
+            Console.WriteLine("❗ Produto inválido: nome vazio.");
+    }
+
+    public override Produto Read(int id) => dados.FirstOrDefault(p => p.Id == id);
+
+    public override void Update(int id, Produto produto)
+    {
+        var idx = dados.FindIndex(p => p.Id == id);
+        if (idx != -1) dados[idx] = produto;
+    }
+
+    public override void Delete(int id)
+    {
+        var produto = Read(id);
+        if (produto != null) dados.Remove(produto);
+    }
+}
