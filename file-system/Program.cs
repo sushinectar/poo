@@ -6,3 +6,10 @@ public interface IArmazenamento
     bool Excluir(string nome);
     List<string> ListarArquivos();
 }
+
+// Interface IRastreavel
+public interface IRastreavel
+{
+    void RegistrarOperacao(string operacao, string arquivo);
+    List<string> ObterHistoricoOperacoes();
+}
